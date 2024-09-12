@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección a Encuesta</title>
+    <script>
+        function redirigir() {
+            var form1 = "https://forms.office.com/r/juFpQ46TbT";
+            var form2 = "https://forms.office.com/r/WicJPSLLXr";
+            var aleatorio = Math.random();
+            if (aleatorio < 0.5) {
+                window.location.href = form1;
+            } else {
+                window.location.href = form2;
+            }
+        }
+        window.onload = redirigir;
+    </script>
+</head>
+<body>
+</body>
+</html>
